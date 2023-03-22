@@ -1,4 +1,4 @@
-# Diagramas UML
+# Ejercicios y diagramas UML
 
 ## Juan Manuel Restrepo Vela
 ## 1).  
@@ -118,3 +118,19 @@ Cada inmueble tiene un valor de compra.Este depende del área de cada inmueble s
 
 ### Diagrama del ejercicio 3
 ![Diagrama 3](./DiagramasUML/Semana1Ejercicio3.png)
+
+## 4).  
+Descripción del ejercicio:
+
+Se requiere definir una clase denominada CálculosNúmericos que realice las siguientes
+operaciones:
+
+1. Calcular la raíz cuadrada recibiendo un valor double como parámetro. Este método debe ser estático. Si el valor no es positivo se genera una excepción aritmética.
+
+2. Calcular la pendiente de una recta.
+
+3. Calcular el punto medio de una recta.
+
+4. Calcular las raíces de una ecuación cuadrática.
+
+5. Convertir un número en base 10 a un número en base b.
