@@ -1,4 +1,6 @@
 # Diagramas UML
+
+## Juan Manuel Restrepo Vela
 ## 1).  
 Descripción del ejercicio:
 
