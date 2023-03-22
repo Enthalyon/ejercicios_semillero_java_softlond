@@ -7,21 +7,10 @@ public class CuentaCorriente extends CuentaBancaria{
         super(saldo, tasaAnual);
     }
 
-    @Override
-    public float retirarDineroCuenta(float retiro){
-        if (retiro > this.saldo){
-            this.sobregiro += retiro - this.saldo;
-            this.saldo = 0;
-            numeroDeRetiros++;
-        } else {
-            super.retirarDineroCuenta(retiro);
-        }
-        return this.saldo;
-    }
 
     @Override
-    public float consignarDineroCuenta(float consignacion){//800k
-        if (this.sobregiro > 0){ //500k
+    public float consignarDineroCuenta(float consignacion){
+        if (this.sobregiro > 0){
 
             if(consignacion > this.sobregiro){
                 this.saldo += consignacion - this.sobregiro;
@@ -36,10 +25,25 @@ public class CuentaCorriente extends CuentaBancaria{
         return this.saldo;
     }
 
+
+    @Override
+    public float retirarDineroCuenta(float retiro){
+        if (retiro > this.saldo){
+            this.sobregiro += retiro - this.saldo;
+            this.saldo = 0;
+            numeroDeRetiros++;
+        } else {
+            super.retirarDineroCuenta(retiro);
+        }
+        return this.saldo;
+    }
+
+
     @Override
     public float extractoMensual(){
         return super.extractoMensual();
     }
+
 
     @Override
     public void imprimirCuentaBancaria(){

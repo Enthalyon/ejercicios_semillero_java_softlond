@@ -26,13 +26,13 @@ public class CuentaBancaria {
         return this.saldo;
     }
 
-    public float calcularInteresMensualCuenta(float a){
+    public float calcularInteresMensualCuenta(){
         this.comisionMensual = ((this.saldo * this.tasaAnual)/100)/12;
         return this.saldo;
     }
 
     public float extractoMensual(){
-        calcularInteresMensualCuenta(this.saldo);
+        calcularInteresMensualCuenta();
         this.saldo -= this.comisionMensual;
         return this.saldo;
     }

@@ -11,7 +11,7 @@ public class Main {
 
         //System.out.println(CalculosNumericos.calcularRaicesEcuacionCuadratica(1,-2,-3));
 
-        System.out.println(CalculosNumericos.convertirBaseDiezABaseN(85, 9));
+        System.out.println(CalculosNumericos.convertirBaseDiezABaseN(85, 3));
 
     }
 }
