@@ -7,7 +7,7 @@ public class CalculosNumericos {
     public static double calcularRaizCuadrada(double numero){
 
         if(numero < 0){
-            throw new ArithmeticException("No se pueden ingresar valores negativos");
+            throw new ArithmeticException("No se puede calcular la raíz cuadrada de un número negativo");
         }
 
         return Math.sqrt(numero);
@@ -50,8 +50,8 @@ public class CalculosNumericos {
 
     public static String convertirBaseDiezABaseN(int numeroAConvertir, int sistemaDestino){
 
-        if (sistemaDestino > 9){
-            return "Solo se permiten bases inferiores a 10";
+        if (sistemaDestino < 2 || sistemaDestino > 9){
+            throw new IllegalArgumentException("Solo se permiten bases entre 2 y 10");
         }
 
         int cociente = 0;
